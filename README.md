@@ -4,6 +4,9 @@ This is of project for system and config envariaments of git
 
 Install
 -----------
+```bash
+$ brew install gitchange
+```
 
 - Cargo
 
