@@ -45,7 +45,7 @@ pub fn run_process(input: String) -> String {
 fn main() {
     ensure_accounts_file_exists();
     println!(
-        "\nGIT_CHANGE - Gestion of accounts\n1) Change Account \n2) View Accounts \n3) Add Account \n4) Delete Account\n"
+        "\n\x1b[35mGIT_CHANGE - Gestion de Cuentas\x1b[0m\n\x1b[35m1\x1b[0m. Cambiar \n\x1b[35m2\x1b[0m. Ver Cuentas \n\x1b[35m3\x1b[0m. Agregar \n\x1b[35m4\x1b[0m. Quitar\n"
     );
     let options = args_write().trim().to_string();
 
@@ -78,11 +78,11 @@ fn main() {
         io::stdout().flush().unwrap();
         let email = args_write().trim().to_string();
     
-        print!("UserName: ");
+        print!("Usuario: ");
         io::stdout().flush().unwrap();
         let name = args_write().trim().to_string();
     
-        print!("Hash Token: ");
+        print!("Token(Optional): ");
         io::stdout().flush().unwrap();
         let hash = args_write().trim().to_string();
     

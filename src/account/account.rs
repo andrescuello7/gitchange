@@ -62,7 +62,7 @@ pub fn add_user_to_file(user: User) {
     file.write_all(json.as_bytes()).expect("No se pudo escribir el archivo");
 
     println!(
-        "\n\nUsuario agregado correctamente.\n- ID: {}\n- Email: {}\n- Nombre: {}\n- Hash: {}\n\n",
+        "\n\n\x1b[35mUsuario agregado correctamente\x1b[0m.\n.ID: \x1b[32m{}\x1b[0m\n.Email: {}\n.Usuario: {}\n.Token: {}\n\n",
         new_user.id, new_user.email, new_user.name, new_user.hash
     );
 }
@@ -87,23 +87,23 @@ pub fn list_users() {
         .trim()
         .to_string();
 
-    println!("\nCuentas disponibles:");
+    println!("\n\x1b[35mCuentas disponibles:\x1b");
 
     for account in &accounts {
         if account.name == current_user_name {
             println!(
-                "[{}] - Name: \x1b[92m{} (actual)\x1b[0m\n    - Email: {}\n    - Hash: {}\n",
+                "\x1b[35m[{}]\x1b[0m .Usuario: \x1b[92m{} (actual)\x1b[0m\n    .Email: {}\n    .Token: {}\n",
                 account.id, account.name, account.email, account.hash
             );
         } else {
             println!(
-                "[{}] - Name: {}\n    - Email: {}\n    - Hash: {}\n",
+                "\x1b[35m[{}]\x1b[0m .Usuario: {}\n    .Email: {}\n    .Token: {}\n",
                 account.id, account.name, account.email, account.hash
             );
         }
     }
     
-    println!("Git Actual: {}\n", current_user_name);
+    println!("Git Actual: \x1b[32m{}\x1b\n", current_user_name);
 }
 
 pub fn delete_account_by_id(target_id: u32) {
