@@ -2,12 +2,28 @@
 
 This is of project for system and config envariaments of git
 
-Install
------------
+
+## Instalación en Windows
+
+Download ultimate version to Windows (archivo `.exe`):
+
+- [gitchange.exe (v1.0.0)](https://github.com/andrescuello7/gitchange/releases/download/v1.0.0/gitchange.exe)
+
+## Instalación en Linux
+
+```bash
+$ apt install gitchange
+```
+
+## Instalación en MacOs
+
 ```bash
 $ brew install gitchange
 ```
 
+
+Develop Install
+-----------
 - Cargo
 
 
