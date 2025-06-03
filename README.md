@@ -2,6 +2,7 @@
 
 This is of project for system and config envariaments of git
 
+https://github.com/user-attachments/assets/0cd7cd46-b9a7-454e-93a1-9c6709fb32a4
 
 ## Instalación en Windows
 
